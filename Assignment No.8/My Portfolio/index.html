@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS (v5.3.2) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <b>My Portfolio</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-primary nav-link" onclick="showSection('home')">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary nav-link" onclick="showSection('personal-details')">Personal Details</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary nav-link" onclick="showSection('contact-details')">Contact Details</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="p-5 text-center">
+        <div class="container">
+            <h1>Hello!</h1>
+            <h1 class="head"><b>I'm Samiksha Neman</b></h1>
+            <h3>Fullstack Developer</h3>
+            <h2><b>Welcome to My Portfolio!</b></h2>
+            <p class="lead mt-4">A Full-Stack Developer with a knack for building complete web applications. I work on both the front-end and back-end, ensuring everything runs smoothly and looks great. Check out detailed information about me.</p>
+            <a href="#" onclick="showSection('personal-details')" class="btn btn-primary mt-3">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- Personal Details Section -->
+    <section id="personal-details" class="p-5 text-center" style="display:flex">
+        <div class="container">
+            <h2 class="pdetails"><b>Personal Details</b></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Samiksha Sanjay Neman</h4>
+                            <p class="card-text"><strong>Profession:</strong> Full-Stack Developer</p>
+                            <p class="card-text"><strong>Location:</strong> Lanja-Ratnagiri</p>
+                            <p class="card-text"><strong>Education:</strong>B.E. Computer Engineering</p>
+                            <p class="card-text"><strong>Experience:</strong> Internship in YBI Foundation (Data Science & Machine Learning)</p>
+                            <p class="card-text"><strong>Skills:</strong> HTML, CSS, JavaScript, Java, Python, SQL Database</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact-details" class="p-5 text-center" style="display: none;">
+        <div class="container">
+            <h2 class="cdetails"><b>Contact Details</b></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"><strong>Email:</strong> samikshaneman30@gmail.com</p>
+                            <p class="card-text"><strong>Phone:</strong> 7021175884</p>
+                            <p class="card-text"><strong>LinkedIn:</strong> linkedin.com/in/Samiksha Neman</p>
+                            <p class="card-text"><strong>GitHub:</strong> github.com/samikshaneman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies (v5.3.2) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
