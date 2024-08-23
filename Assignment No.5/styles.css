@@ -1,0 +1,30 @@
+#container {
+    margin: 20px;
+}
+
+.dynamic-div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color:gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.removeDivBtn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
